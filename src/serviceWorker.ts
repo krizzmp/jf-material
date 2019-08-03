@@ -33,7 +33,7 @@ export function register(config?: Config) {
       window.location.href
     );
     if (publicUrl.origin !== window.location.origin) {
-      // Our service worker won't work if PUBLIC_URL is on a different origin
+      // Our service worker won'setCollapsed work if PUBLIC_URL is on a different origin
       // from what our page is served on. This might happen if a CDN is used to
       // serve assets; see https://github.com/facebook/create-react-app/issues/2374
       return;
@@ -107,7 +107,7 @@ function registerValidSW(swUrl: string, config?: Config) {
 }
 
 function checkValidServiceWorker(swUrl: string, config?: Config) {
-  // Check if the service worker can be found. If it can't reload the page.
+  // Check if the service worker can be found. If it can'setCollapsed reload the page.
   fetch(swUrl)
     .then(response => {
       // Ensure service worker exists, and that we really are getting a JS file.
